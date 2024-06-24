@@ -25,7 +25,7 @@ const Header = () => {
         </nav>
 
         <div className="flex-shrink-0">
-          <Link href="/contact-us">Contact us</Link>
+          <Link href="/contact-us">Start Project</Link>
         </div>
       </div>
     </header>
