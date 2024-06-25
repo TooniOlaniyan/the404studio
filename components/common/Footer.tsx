@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button"; 
+import { ButtonStatic } from "@/components/ui/button"; 
 
 const Footer = () => {
   return (
@@ -9,26 +9,19 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="relative z-10 flex justify-between items-center bg-gray-100 p-8 rounded-lg mb-8">
           <h2 className="text-4xl font-bold mb-4 leading-loose">
-            Excited? Us too. Let’s <br /> start building your ideas.
+            Excited? We too. Let’s <br /> start building your ideas.
           </h2>
-          <Link href="/schedule-call">
-            <Button className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white text-lg font-semibold rounded-md hover:bg-blue-600 transition-colors">
+          <Link  href="/schedule-call">
+            <ButtonStatic className="flex items-center justify-center gap-2 px-6 py-3 text-white text-lg font-semibold rounded-md">
               Schedule a Call
-              <Image
-                src="/assets/icons/video.svg"
-                alt="Video Icon"
-                width={25}
-                height={25}
-                className="mr-2"
-              />
-            </Button>
+            </ButtonStatic>
           </Link>
         </div>
 
-        <div className="relative z-10 flex justify-between items-center mb-8">
+        <div className="relative z-10 flex justify-between items-center mb-8 border-b border-gray-300">
           <div className="flex-shrink-0">
             <Image
-              src="/logo.svg"
+              src="/assets/icons/logo.svg"
               width={300}
               height={300}
               alt="404Studio"
@@ -37,10 +30,10 @@ const Footer = () => {
           </div>
 
           <nav className="flex space-x-4">
-            <Link href="/services">Services</Link>
+            <Link href="/about-us">About</Link>
             <Link href="/pricing">Pricing</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/about">About</Link>
+            <Link href="/works">Works</Link>
+            <Link href="/our-services">Our Services</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </div>
@@ -112,7 +105,6 @@ const Footer = () => {
           <div className="col-span-1 border-l border-gray-300 "></div>
           <div className="col-span-1 border-l border-gray-300 "></div>
           <div className="col-span-1 border-l border-gray-300 "></div>
-       
         </div>
       </div>
     </footer>

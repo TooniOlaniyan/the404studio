@@ -9,7 +9,7 @@ import Head from "next/head";
 const fontSans = FontSans({
   subsets: ["latin-ext"],
   variable: "--font-sans",
-  weight:['400']
+  weight: ["400"],
   // weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
 });
 
@@ -34,14 +34,13 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <main className={`flex min-h-screen flex-col `}>
+        <main className={`flex min-h-screen flex-col bg-bodyColor `}>
           <Header />
-          <div className="flex flex-1 justify-center w-full">
-            <div className="flex w-full max-w-[1280px] h-full">{children}</div>
+          <div className="w-full">
+            <div className="flex w-full h-full">{children}</div>
           </div>
           <Footer />
         </main>
-      
       </body>
     </html>
   );
